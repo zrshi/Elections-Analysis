@@ -47,6 +47,21 @@ with open(file_to_load) as election_data:
 
         # accumulate vote counts for each candidate
         candidate_votes[candidate_name] +=1
+    
+#Save the results to our text file.
+with open(file_to_save, "w") as txt_file:
+    # Print the final vote count to the terminal
+    election_results = (
+        f"\nElection Results\n"
+        f"---------------------------\n"
+        f"Total Votes: {total_votes:,}\n"
+        f"---------------------------\n"
+    )
+
+    print(election_results, end="")
+    # SAVE THE FINAL VOTE COUNT TO THE TEXT FILE.
+    txt_file.write(election_results)
+    
     # Determine the percentage of votes for each cnadidate by looping thorugh the counts
     # 1. Iterate through the candidate list.
     for candidate in candidate_votes:
@@ -54,9 +69,9 @@ with open(file_to_load) as election_data:
         votes = candidate_votes[candidate]
         #3. Calculate the percentage of votes
         vote_percentage = int(votes)/int(total_votes) * 100
-        #4. Print each candidate's name, vote count, and perentage of votes to the terminal
-        print(f"{candidate}: {vote_percentage:.2f}% ({votes:,})\n")
-
+        candidate_results = (f'{candidate}: {vote_percentage:.1f}% ({votes:,})\n')
+        print(candidate_results)
+        txt_file.write(candidate_results)
         # Determine winning vote count and candidate
         # Determine if the votes is greater than the winning count
         if (votes > winning_count) and (vote_percentage > winning_percentage):
@@ -66,17 +81,18 @@ with open(file_to_load) as election_data:
             winning_percentage = vote_percentage
             # And, set the winning candidate eqaul to the candidate's name
             winning_candidate = candidate  
-
+    # Print the winning candidate's results ot the terminal.     
     winning_candidate_summary = ( 
         f"-------------------------\n"
         f"winner: {winning_candidate}\n"
         f"Winning Vote Count: {winning_count:,}\n"
         f"Winniing Percentage: {winning_percentage:.1f}%\n"
-        f"------------------------------\n"
-        )
-
+        f"------------------------------\n")
     print(winning_candidate_summary)
-    
+        
+    # Save the winning candidate's name to the text file
+    txt_file.write(winning_candidate_summary)   
+        
 
 
    
