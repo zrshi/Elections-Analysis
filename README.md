@@ -26,8 +26,9 @@ The analysis of the election shows that:
   - Raymon Anthony Doane: 3.1% (11,606 votes) 
  - The winner of the election was: 
   - Diana DeGette who recieved 272,892 (or 73.8%) of total votes
--The county with the best voter turn out is Denver which had 82.8% of the total votes cast in this election
--A summary of the voter turn outs by county is as below:
+
+- The county with the best voter turn out is Denver which had 82.8% of the total votes cast in this election
+- A summary of the voter turn out by county is as below:
   - Jefferson: 10.5% (38,855 votes)
   - Denver: 82.8% (306,055 votes)
   - Arapahoe: 6.7% (24,801 votes)
