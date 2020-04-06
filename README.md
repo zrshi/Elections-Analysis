@@ -24,6 +24,11 @@ The analysis of the election shows that:
   - Charles Casper Stockham: 23.0% (85,123 votes)
   - Diana DeGette: 73.8% (272,892 votes)
   - Raymon Anthony Doane: 3.1% (11,606 votes) 
+ -The county with the best voter turn out is Denver which had 82.8% of the total votes cast in this election
+ -A summary of the voter turn outs by county is as below:
+  - Jefferson: 10.5% (38,855 votes)
+  - Denver: 82.8% (306,055 votes)
+  - Arapahoe: 6.7% (24,801 votes)
   
 - The winner of the election was: 
   - Diana DeGette who recieved 272,892 (or 73.8%) of total votes
